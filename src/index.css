@@ -1,13 +1,120 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	font-family: "Roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* padding: 50px; */
+    display: flex;
+    flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*  */
+
+body{
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main{
+  flex-grow: 1;
+
+}
+
+
+[class*="__container"]{
+  max-width: 1020px;
+  margin: 0px auto;
+}
+
+.header{
+  text-align: center;
+  font-size: 56px;
+  padding: 50px 0px;
+}
+
+.item-form{
+  text-align: center;
+  font-weight: 300;
+  padding: 20px 0px;
+}
+
+.item-form__container{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.todolist{
+  text-align: center;
+}
+
+.todolist__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer{
+  text-align: center;
+}
+
+.item{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.done{
+  text-decoration: line-through;
 }
